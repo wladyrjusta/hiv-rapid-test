@@ -1,0 +1,72 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header-container {
+  align-self: baseline;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+  height: 400px;
+  width: 100%;
+  background-image: url('assets/rapid-test-hiv.jpeg');
+  background-size: cover; /* Ajusta a imagem para cobrir o elemento */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.btn-link-conteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  align-content: space-around;
+  height: 100px;
+  width: 100%;
+}
+
+.link {
+  color: darkblue;
+}
+
+.redirect-btn {
+  height: 30px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: darkblue;
+}
+
+.question-btn {
+  height: 30px;
+  border-radius: 10px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.1s ease;
+  outline: none; /* Remove o contorno padrão do foco */
+}
+
+.question-btn:focus {
+  background-color: rgb(150, 150, 236); /* Cor alterada ao ser pressionado */
+  transform: scale(0.95); /* Efeito de "apertar" */
+}
+
+/* Garante que os outros botões retornem ao estado padrão */
+.question-btn:not(:focus) {
+  background-color: darkblue;
+  transform: scale(1);
+}
