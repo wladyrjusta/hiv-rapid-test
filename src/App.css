@@ -13,11 +13,13 @@
   justify-content: center;
   height: 400px;
   width: 100%;
-  background-image: url('assets/rapid-test-hiv.jpeg');
+  background-image: url('assets/rapid-test-hiv.webp');
   background-size: cover; /* Ajusta a imagem para cobrir o elemento */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita que a imagem se repita */
 }
+
+
 
 .content {
   display: flex;
@@ -46,14 +48,15 @@
   height: 30px;
   width: 150px;
   border-radius: 10px;
-  background-color: darkblue;
+  background-color: rgb(240, 130, 210);
+  color: black;
 }
 
 .question-btn {
   height: 30px;
   border-radius: 10px;
-  background-color: darkblue;
-  color: white;
+  background-color: rgb(240, 130, 210);
+  color: black;
   border: none;
   cursor: pointer;
   transition: transform 0.1s ease, background-color 0.1s ease;
@@ -67,6 +70,32 @@
 
 /* Garante que os outros botões retornem ao estado padrão */
 .question-btn:not(:focus) {
-  background-color: darkblue;
+  background-color: rgb(240, 130, 210);
   transform: scale(1);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.respostas-conteiner {
+  display: flex;
+  width: 40%;
+  height: auto;
+  margin-right: 10px;
+  justify-content: flex-end;
+}
+
+.promts-conteiner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 40%;
+  height: auto;
+  margin-left: 10px;
+  justify-content: flex-start;
 }

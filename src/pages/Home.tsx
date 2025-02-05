@@ -5,12 +5,15 @@ function Home() {
     return (
         <>
       <div className="header-container">
-        <h2 className="header-text">Teste Rápido HIV</h2>
+        <h1 className="header-text">Teste Rápido HIV</h1>
       </div>
       <br />
       <div className="content">
         <h3>
-          A Organização Mundial de Saúde (OMS) Relata que o autoteste é uma ação no qual o cliente coleta sua própria amostra (fluido oral ou sangue) e então realiza o procedimento do teste e depois interpreta o resultado, podendo ser sozinho, com alguém que confie ou um profissional. Este teste faz com que o paciente tenha uma independência maior e com isso descentralizar os serviços de saúde e aumenta a demanda de testes de HIV podendo alcançar mais pessoas e testar com mais frequência principalmente a população de risco e vulneráveis que podem contrai o HIV.  Exemplo deles são os homens que fazem sexo com homens (HSH), a população trans, os(as) trabalhadores(as) do sexo, a população privada de liberdade e as pessoas usuárias de álcool e outras drogas. (OMS,2023). 
+        A Organização Mundial de Saúde (OMS) informa que o autoteste é uma forma da pessoa coletar sua própria amostra (fluido oral ou sangue), fazer o teste e interpretar o resultado, sozinha, com alguém de confiança ou com um profissional de saúde.
+
+O autoteste dá mais autonomia ao paciente, descentraliza os serviços de saúde e aumenta a procura por testes de HIV, alcançando mais pessoas e possibilitando testagens mais frequentes, principalmente entre populações de risco e vulneráveis, como homens que fazem sexo com homens (HSH), população trans, profissionais do sexo, população carcerária e usuários de álcool e outras drogas.
+
         </h3>
       </div>
       <br />
@@ -18,13 +21,13 @@ function Home() {
       <h2>O que é um autoteste?</h2>
       <div className="content">
         <h3>
-        O autoteste é realizado de forma bem simples igual aos testes rápidos convencionais utilizados em serviços de saúde ou em ações de promoção da saúde, a diferença é que é a própria pessoa que faz, em casa ou em qualquer lugar. O exame pode utilizar fluido oral ou sangue, a depender do tipo de teste escolhido. Basta seguir o passo a passo. Ele é intuitivo e muito fácil de interpretar. (OMS,2023).
+        O autoteste é simples como os testes rápidos convencionais feitos em serviços de saúde ou ações de promoção da saúde. A diferença é que a própria pessoa faz o teste em casa ou onde preferir. O exame pode usar fluido oral ou sangue, dependendo do tipo de teste. É só seguir o passo a passo, que é fácil de entender e interpretar.
         </h3>
       </div>
       <h2>O autoteste confirma se uma pessoa tem HIV?</h2>
       <div className="content">
         <h3>
-        De acordo com a Portaria nº 29, de 17 de Dezembro de 2013, o que aprova o Manual Técnico para o diagnóstico da infecção pelo HIV.  Os resultados do autoteste não podem ser utilizados para o diagnóstico concreto. Se o resultado do autoteste for reagente (positivo), procure um serviço de saúde para concluir o diagnostico com exames complementares, com profissionais qualificados. (OMS,2023)
+        De acordo com a Portaria nº 29, de 17 de dezembro de 2013, que aprova o Manual Técnico para o diagnóstico da infecção pelo HIV, os resultados do autoteste não servem para dar um diagnóstico definitivo. Se o resultado do autoteste for positivo, procure um serviço de saúde para fazer exames complementares e ter um diagnóstico conclusivo com profissionais qualificados.
         </h3>
       </div>      
       <div className="btn-link-conteiner">
