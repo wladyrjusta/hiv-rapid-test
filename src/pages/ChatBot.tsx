@@ -37,8 +37,6 @@ function ChatBot() {
             <button  onClick={() => setIndex(11)}
               className="question-btn">Precisa de mais informações?</button>
             <button  onClick={() => setIndex(12)}
-              className="question-btn">passo a passo realização do autoteste com fluidos orais</button>
-            <button  onClick={() => setIndex(13)}
               className="question-btn">passo a passo realização do autoteste com sangue</button>
             <button  onClick={() => navigate("/")}
               className="question-btn">Encerrar chat</button>
@@ -114,19 +112,6 @@ function ChatBot() {
             }
             {
                index === 12 && (
-                <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/gCmxUz1OddA"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              )
-            }
-            {
-               index === 13 && (
                 <iframe
                 width="560"
                 height="315"
