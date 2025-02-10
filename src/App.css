@@ -77,13 +77,14 @@
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   width: 100%;
 }
 
 .respostas-conteiner {
   display: flex;
+  flex-direction: column;
   width: 40%;
   height: auto;
   margin-right: 10px;

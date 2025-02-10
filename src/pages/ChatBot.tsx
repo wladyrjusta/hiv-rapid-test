@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import negativeTest from "../assets/negative-test.jpg";
+import positiveTest from "../assets/positive-test.jpg";
 
 function ChatBot() {
   const navigate = useNavigate();
@@ -7,6 +9,40 @@ function ChatBot() {
     return (
         <>
         <div className="container">
+        <div className="promts-conteiner">
+            <button onClick={() => setIndex(0)}
+              className="question-btn">
+            Iniciar chat
+            </button>
+            <button  onClick={() => setIndex(1)}
+              className="question-btn">O que é o autoteste de HIV?</button>
+            <button  onClick={() => setIndex(2)}
+              className="question-btn">Onde posso conseguir um autoteste de HIV?</button>
+            <button  onClick={() => setIndex(3)}
+              className="question-btn">Como usar o autoteste?</button>
+            <button  onClick={() => setIndex(4)}
+              className="question-btn">Quando devo fazer o autoteste?</button>
+            <button  onClick={() => setIndex(5)}
+              className="question-btn">O que é o período de janela imunológica?</button>
+            <button  onClick={() => setIndex(6)}
+              className="question-btn">O que faço se o resultado for negativo?</button>
+            <button  onClick={() => setIndex(7)}
+              className="question-btn">O que faço se o resultado for positivo?</button>
+            <button  onClick={() => setIndex(8)}
+              className="question-btn">E se eu tiver dúvidas sobre o resultado?</button>
+            <button  onClick={() => setIndex(9)}
+              className="question-btn">A realização do autoteste é confidencial?</button>
+            <button  onClick={() => setIndex(10)}
+              className="question-btn">Por que é importante fazer o teste de HIV?</button>
+            <button  onClick={() => setIndex(11)}
+              className="question-btn">Precisa de mais informações?</button>
+            <button  onClick={() => setIndex(12)}
+              className="question-btn">passo a passo realização do autoteste com fluidos orais</button>
+            <button  onClick={() => setIndex(13)}
+              className="question-btn">passo a passo realização do autoteste com sangue</button>
+            <button  onClick={() => navigate("/")}
+              className="question-btn">Encerrar chat</button>
+          </div>
           <div className="respostas-conteiner">
             {
               index === 0 && (
@@ -42,12 +78,18 @@ function ChatBot() {
             }
             {
                index === 6 && (
-                  <h1>Se o resultado for negativo e você não teve nenhuma situação de risco nos últimos 30 dias, você não tem o vírus HIV. Caso contrário, repita o teste após o período de janela imunológica.</h1>
+                  <>
+                    <h1>Se o resultado for negativo e você não teve nenhuma situação de risco nos últimos 30 dias, você não tem o vírus HIV. Caso contrário, repita o teste após o período de janela imunológica.</h1>
+                    <img src={negativeTest} alt="auto teste hiv negativo" />
+                  </>
               )
             }
             {
                 index === 7 && (
-                  <h1>Se o resultado for positivo, procure imediatamente um posto de saúde para fazer um teste confirmatório e receber orientação profissional. O SUS oferece acompanhamento e tratamento gratuitos.</h1>
+                  <>
+                    <h1>Se o resultado for positivo, procure imediatamente um posto de saúde para fazer um teste confirmatório e receber orientação profissional. O SUS oferece acompanhamento e tratamento gratuitos.</h1>
+                    <img src={positiveTest} alt="auto teste hiv positivo" />
+                  </>
               )
             }
             {
@@ -70,36 +112,31 @@ function ChatBot() {
                   <h1>Se precisar de mais ajuda, posso indicar o posto de saúde mais próximo ou o Disque Saúde pelo número 136. Estou aqui para te ajudar!</h1>
               )
             }
-          </div>
-          <div className="promts-conteiner">
-            <button onClick={() => setIndex(0)}
-              className="question-btn">
-            Iniciar chat
-            </button>
-            <button  onClick={() => setIndex(1)}
-              className="question-btn">O que é o autoteste de HIV?</button>
-            <button  onClick={() => setIndex(2)}
-              className="question-btn">Onde posso conseguir um autoteste de HIV?</button>
-            <button  onClick={() => setIndex(3)}
-              className="question-btn">Como usar o autoteste?</button>
-            <button  onClick={() => setIndex(4)}
-              className="question-btn">Quando devo fazer o autoteste?</button>
-            <button  onClick={() => setIndex(5)}
-              className="question-btn">O que é o período de janela imunológica?</button>
-            <button  onClick={() => setIndex(6)}
-              className="question-btn">O que faço se o resultado for negativo?</button>
-            <button  onClick={() => setIndex(7)}
-              className="question-btn">O que faço se o resultado for positivo?</button>
-            <button  onClick={() => setIndex(8)}
-              className="question-btn">E se eu tiver dúvidas sobre o resultado?</button>
-            <button  onClick={() => setIndex(9)}
-              className="question-btn">A realização do autoteste é confidencial?</button>
-            <button  onClick={() => setIndex(10)}
-              className="question-btn">Por que é importante fazer o teste de HIV?</button>
-            <button  onClick={() => setIndex(11)}
-              className="question-btn">Precisa de mais informações?</button>
-            <button  onClick={() => navigate("/")}
-              className="question-btn">Encerrar chat</button>
+            {
+               index === 12 && (
+                <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/gCmxUz1OddA"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              )
+            }
+            {
+               index === 13 && (
+                <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/qiIJPnvKCbo"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              )
+            }
           </div>
           </div>
         </>
